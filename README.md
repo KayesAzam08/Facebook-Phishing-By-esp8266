@@ -10,6 +10,7 @@ Unauthorized use is ILLEGAL and punishable by law.
 
 ---
 
+## The login portal looks like below:
 ![Example Preview](./example.png)
 
 ---
