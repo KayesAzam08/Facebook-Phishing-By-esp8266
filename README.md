@@ -10,6 +10,10 @@ Unauthorized use is ILLEGAL and punishable by law.
 
 ---
 
+![Example Preview](./example.png)
+
+---
+
 ## 📚 Project Summary
 Turn your **ESP8266 NodeMCU** into a fake WiFi hotspot that shows a **captive portal login page** to connected devices.
 
