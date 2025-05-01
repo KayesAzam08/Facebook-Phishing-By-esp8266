@@ -3,10 +3,10 @@
 
 ---
 
-## ⚠️ LEGAL DISCLAIMER
-**This project is for EDUCATIONAL PURPOSES ONLY.**  
+#⚠️ LEGAL DISCLAIMER
+This project is for EDUCATIONAL PURPOSES ONLY. 
 Do not use this tool on unauthorized networks.  
-**Unauthorized use is ILLEGAL and punishable by law.**
+Unauthorized use is ILLEGAL and punishable by law.
 
 ---
 
