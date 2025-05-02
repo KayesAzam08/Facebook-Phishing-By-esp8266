@@ -24,25 +24,25 @@ This project creates a **fake Facebook login page** using the ESP8266 in Access 
 ## Setup Instructions  
 
 1. **Requirements**  
-   - ESP8266 (e.g., NodeMCU, Wemos D1 mini)  
-   - Arduino IDE with ESP8266 board support  
-   - Required libraries:  
-     - `ESP8266WiFi`  
-     - `ESP8266WebServer`  
-     - `DNSServer`  
+- ESP8266 (e.g., NodeMCU, Wemos D1 mini)  
+- Arduino IDE with ESP8266 board support  
+ - Required libraries:  
+  - `ESP8266WiFi`  
+  - `ESP8266WebServer`  
+  - `DNSServer`  
 
 2. **Installation Steps**  
-   - Clone or download this repo  
-   - Open `main.ino` from `src/` in Arduino IDE  
-   - Select the correct board and COM port  
-   - Upload the code  
-   - Open Serial Monitor to debug  
+- Clone or download this repo  
+- Open `main.ino` from `src/` in Arduino IDE  
+- Select the correct board and COM port  
+- Upload the code  
+- Open Serial Monitor to debug  
 
 3. **Operation**  
-   - Connect to the WiFi named `Facebook Free WiFi`  
-   - Any URL will redirect to a Facebook-like login  
-   - Entering credentials will blink the onboard LED  
-   - To view captured credentials, visit: `http://192.168.4.1/pass`  
+- Connect to the WiFi named `Facebook Free WiFi`  
+- Any URL will redirect to a Facebook-like login  
+- Entering credentials will blink the onboard LED  
+- To view captured credentials, visit: `http://192.168.4.1/pass`  
 
 ---
 
