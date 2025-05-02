@@ -1,7 +1,7 @@
 # Facebook Captive Portal Fake Login  
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  
-[![Platform](https://img.shields.io/badge/platform-ESP8266-orange.svg)]  
-[![HTML](https://img.shields.io/badge/frontend-Fake%20Facebook%20UI-blue)
+![Platform](https://img.shields.io/badge/platform-ESP8266-orange.svg) 
+![HTML](https://img.shields.io/badge/frontend-Fake%20Facebook%20UI-blue)
 
 ## Description  
 This project creates a **fake Facebook login page** using the ESP8266 in Access Point (AP) mode. When users connect to the WiFi network, they are redirected to a custom login page mimicking Facebook’s interface. The credentials are captured and displayed locally.
