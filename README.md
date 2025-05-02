@@ -48,7 +48,7 @@ This project creates a **fake Facebook login page** using the ESP8266 in Access 
 
 ## Demo Screenshot  
 
-![Demo Login Portal](docs/example.png)
+![Demo Login Portal](example.png)
 
 ---
 
