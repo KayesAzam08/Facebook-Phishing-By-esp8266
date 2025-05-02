@@ -1,106 +1,66 @@
-# 🛰️ ESP8266 WiFi Captive Portal | Ethical Hacking Demo
-> **Cybersecurity Awareness using ESP8266 + Fake Login Page**
+# Facebook Captive Portal Fake Login  
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  
+[![Platform](https://img.shields.io/badge/platform-ESP8266-orange.svg)]  
+[![HTML](https://img.shields.io/badge/frontend-Fake%20Facebook%20UI-blue)]  
+
+## Description  
+This project creates a **fake Facebook login page** using the ESP8266 in Access Point (AP) mode. When users connect to the WiFi network, they are redirected to a custom login page mimicking Facebook’s interface. The credentials are captured and displayed locally.
+
+> **Disclaimer**: This project is for educational purposes only. Do not use it for unauthorized activities.
 
 ---
 
-#⚠️ LEGAL DISCLAIMER
-This project is for EDUCATIONAL PURPOSES ONLY. 
-Do not use this tool on unauthorized networks.  
-Unauthorized use is ILLEGAL and punishable by law.
+## Features  
+- Fake Facebook login form  
+- Captures and stores credentials in memory (up to 10 entries)  
+- DNS spoofing for redirecting all URLs to the fake portal  
+- Blinks built-in LED upon each credential submission  
+- Minimal and mobile-friendly HTML/CSS layout  
 
 ---
 
-## The login portal looks like below:
-![Example Preview](./example.png)
+---
+
+## Setup Instructions  
+
+1. **Requirements**  
+   - ESP8266 (e.g., NodeMCU, Wemos D1 mini)  
+   - Arduino IDE with ESP8266 board support  
+   - Required libraries:  
+     - `ESP8266WiFi`  
+     - `ESP8266WebServer`  
+     - `DNSServer`  
+
+2. **Installation Steps**  
+   - Clone or download this repo  
+   - Open `main.ino` from `src/` in Arduino IDE  
+   - Select the correct board and COM port  
+   - Upload the code  
+   - Open Serial Monitor to debug  
+
+3. **Operation**  
+   - Connect to the WiFi named `Facebook Free WiFi`  
+   - Any URL will redirect to a Facebook-like login  
+   - Entering credentials will blink the onboard LED  
+   - To view captured credentials, visit: `http://192.168.4.1/pass`  
 
 ---
 
-## 📚 Project Summary
-Turn your **ESP8266 NodeMCU** into a fake WiFi hotspot that shows a **captive portal login page** to connected devices.
+## Demo Screenshot  
 
-This project demonstrates:
-- How public WiFi captive portals function
-- How attackers use **phishing tactics**
-- How users can **protect themselves** from such tricks
+![Demo Login Portal](docs/example.png)
 
 ---
 
-## 🧰 Hardware Requirements
+## About  
+This project demonstrates how a **captive portal phishing method** works using microcontrollers and embedded servers. It can be used for:  
+- Security education  
+- Demonstration of ethical hacking techniques  
+- IoT web interfaces  
 
-| Component         | Description             | Quantity |
-|------------------|-------------------------|----------|
-| ESP8266 NodeMCU   | WiFi microcontroller     | 1        |
-| Micro-USB Cable   | Power & Programming      | 1        |
-| LED (Optional)    | Status indicator         | 1        |
-
----
-
-## ⚙️ Installation Steps
-
-### 1. Install Arduino IDE
-- Download from: https://www.arduino.cc/en/software
-
-### 2. Add ESP8266 Board Support
-- Open **Arduino IDE > Preferences**
-- Add the following URL to *Additional Boards Manager URLs*:
-  ```
-  http://arduino.esp8266.com/stable/package_esp8266com_index.json
-  ```
-- Go to **Tools > Board > Boards Manager** and install:
-  ```
-  ESP8266 by ESP8266 Community
-  ```
-
-### 3. Install Required Libraries
-Use the **Library Manager** to install:
-- `ESP8266WiFi`
-- `DNSServer`
-- `ESP8266WebServer`
+**Author:** *Kayes Azam*  
+**License:** MIT  
 
 ---
 
-### 🔐 Login Capture Endpoint
-
-When a user connects to the fake WiFi and submits the **login form** on the captive portal, their **entered credentials** (such as username and password) are sent to this local endpoint:
-
-```
-http://192.168.4.1/pass
-```
-
-The ESP8266 intercepts this request, and:
-- **Logs the submitted information**
-- **Prints it in the Serial Monitor** (baud rate `115200`)  
-- Example output:
-  ```
-  [+] Captive login received!
-  Username: victim@example.com
-  Password: 12345678
-  ```
-
-> **Note:** The `/pass` endpoint is part of the backend logic in the code, and does **not show anything in the browser** — it silently logs the data for demo purposes.
-
----
-
-## 🛡️ Safety & Awareness Tips
-- Avoid using **open or unknown WiFi networks**
-- Look for **HTTPS** and secure certificates in the browser
-- Never submit passwords on suspicious or unsecured login forms
-- Always verify the **network name (SSID)**
-
----
-
-## 🏷️ Tags
-`#ESP8266` `#WiFiHack` `#EthicalHacking` `#CaptivePortal` `#PhishingDemo`  
-`#CyberSecurity` `#IoTProjects` `#Arduino` `#WiFiSniffer` `#EducationOnly`
-
----
-
-## 📌 Note
-Want to enhance this? Add:
-- HTML templates for login page
-- SPIFFS file system to serve better web assets
-- Data logging to SD card or remote server
-
----
-
-**Created for ethical hacking demonstrations & cybersecurity awareness. Stay safe, stay smart!**
+> **NOTE**: Avoid using this on real users. Always test ethically and responsibly.
